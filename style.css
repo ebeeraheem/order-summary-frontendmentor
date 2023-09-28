@@ -39,8 +39,11 @@ p {
 }
 
 /* Styles for the hero image */
+.top {
+  height: 170px;
+}
 .top img {
-  width: 350px;
+  width: 100%;
   border-radius: 15px 15px 0 0;
 }
 
@@ -63,17 +66,22 @@ p {
   padding: 10px 0;
   display: inline-flex;
   align-items: center;
-  justify-content: space-around;
   background-color: var(--main-color);
   border-radius: 5px;
 }
 .plan div img {
   width: 45px;
+  margin-left: 1em;
+  border: 1px solid var(--neutral-color2);
+  border-radius: 50%;
 }
 .plan p {
   margin: 0;
 }
 
+.detail {
+  padding: 0 5em 0 1em;
+}
 /* Styles for the payment button */
 .payment {
   background-color: var(--sec-color);
