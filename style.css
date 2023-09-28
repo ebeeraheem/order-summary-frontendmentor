@@ -1,0 +1,125 @@
+@import url(normalize.css);
+
+:root {
+  --main-color: hsl(225, 100%, 94%);
+  --sec-color: hsl(245, 75%, 52%);
+
+  --neutral-color1: hsl(225, 100%, 98%);
+  --neutral-color2: hsl(224, 23%, 55%);
+  --neutral-color3: hsl(223, 47%, 23%);
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-color);
+  background-image: url(images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  color: var(--neutral-color2);
+}
+/* Style for the card */
+.card {
+  width: 350px;
+}
+
+/* Styles for the hero image */
+.top img {
+  width: 350px;
+  border-radius: 15px 15px 0 0;
+}
+
+/* styles for the bottom of the card */
+.bottom {
+  background-color: var(--neutral-color1);
+  text-align: center;
+  border-radius: 0 0 15px 15px;
+  padding: 35px;
+  font-size: 0.8em;
+  color: var(--neutral-color3);
+}
+.bottom h2 {
+  font-weight: 900;
+}
+
+/* Styles for the plan details */
+.plan {
+  width: 100%;
+  padding: 10px 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--main-color);
+  border-radius: 5px;
+}
+.plan div img {
+  width: 45px;
+}
+.plan p {
+  margin: 0;
+}
+
+/* Styles for the payment button */
+.payment {
+  background-color: var(--sec-color);
+  color: var(--neutral-color1);
+  text-decoration: none;
+  font-weight: 700;
+  width: 100%;
+  display: inline-block;
+  padding: 13px 0;
+  border-radius: 5px;
+  margin: 20px 0;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.payment:hover {
+  background-color: var(--neutral-color3);
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.change {
+  font-weight: 700;
+}
+.change:hover {
+  text-decoration: none;
+  color: var(--neutral-color3);
+}
+/* Styles for the cancel button */
+.reset {
+  background-color: var(--neutral-color1);
+  color: var(--neutral-color2);
+  text-decoration: none;
+  font-weight: 700;
+  padding: 10px;
+  border-radius: 5px;
+}
+.reset:hover {
+  color: var(--neutral-color3);
+}
+
+/* Styles for the attribution */
+.attribution {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 15px;
+  font-size: 11px;
+}
+.attribution a {
+  color: var(--neutral-color2);
+}
